@@ -88,3 +88,15 @@ video{
         transform: scale(1.2);
     }
 }
+
+.timer-cont{
+   color: aqua;
+    position: absolute;
+    bottom: 10rem;
+    left: 5rem;
+    font-size: 0.8rem;
+}
+
+.timer{
+    display: none;
+}

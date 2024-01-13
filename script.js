@@ -49,8 +49,51 @@ RecordBtnCont.addEventListener("click", (e) => {
     if (recordFlag) { // start
         recorder.start()
         RecordBtn.classList.add("scale-record")
+
+        startTimer();
+
+
     } else { // stop
         recorder.stop()
         RecordBtn.classList.remove("scale-record")
+        stopTimer();
     }
-    })
+})
+
+let timerID;
+let counter = 0;
+let timer = document.querySelector(".timer");
+    
+
+function startTimer() {
+    timer.style.display = "block";
+    function displayTimer() {
+
+        let totalSeconds = counter;
+        
+        let hours = Number.parseInt(totalSeconds / 3600);
+        totalSeconds = totalSeconds % 3600; // remaining value
+
+        let minutes = Number.parseInt(totalSeconds / 60);
+        totalSeconds = totalSeconds % 60; // remaining value
+
+        let seconds = totalSeconds;
+
+        hours = (hours < 10) ? `0${hours}` : hours;
+        minutes = (minutes < 10) ? `0${minutes}` : minutes;
+        seconds = (seconds < 10) ? `0${seconds}` : seconds;
+
+        timer.innerText = `${hours}: ${minutes} : ${seconds}`;
+
+        counter++; 
+    }
+
+    timerID = setInterval(displayTimer, 1000)
+}
+
+
+function stopTimer() {
+    clearInterval(timerID);
+    timer.style.display = "none";
+    timer.innerText = "00:00:00";
+}
