@@ -8,3 +8,12 @@ Features:
 🎥 Video Recording: Capture dynamic moments with the video recording feature.
 🖼️ Gallery Stored in the Browser: Your memories, conveniently stored and accessible right from your browser.
 LensLoom is not just a tool; it's an ode to creativity, making every capture an artistic endeavor. Made with love by Bhavya Khatri.
+
+
+# Process
+
+- Basic structure created
+- Video Part created
+- Record & Capture button created
+- Record Stream Video
+- Added timer functionality 
