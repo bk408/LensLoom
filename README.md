@@ -17,4 +17,7 @@ LensLoom is not just a tool; it's an ode to creativity, making every capture an 
 - Record Stream Video
 - Added timer functionality
 - Image capture functionality added
-- Image filtering functionality added
+- Image filter functionality added
+- Gallery Feature added   - using Index DB
+- Retrieve data from indexedDB to gallery
+

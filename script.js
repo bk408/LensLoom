@@ -31,7 +31,6 @@ navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
   recorder.addEventListener("stop", (e) => {
     // conversion of media chunks data to video
     let blob = new Blob(chunks, { type: "video/mp4" });
-    //let videoURL = URL.createObjectURL(blob);
 
     if (db) {
       let videoID = shortid(); // it will create a unique id
@@ -39,15 +38,10 @@ navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
       let videoStore = dbTransaction.objectStore("video");
       let videoEntry = {
         id: `vid - ${videoID}`,
-        blobData: blob
-      }
-      videoStore.add(videoEntry)
+        blobData: blob,
+      };
+      videoStore.add(videoEntry);
     }
-
-    /*let a = document.createElement("a");
-    a.href = videoURL;
-    a.download = "stream.mp4";
-    a.click();*/
   });
 });
 
@@ -71,6 +65,8 @@ RecordBtnCont.addEventListener("click", (e) => {
 });
 
 CaptureBtnCont.addEventListener("click", (e) => {
+  CaptureBtn.classList.add("scale-capture");
+
   let canvas = document.createElement("canvas");
   canvas.width = video.videoWidth;
   canvas.height = video.videoHeight;
@@ -84,21 +80,20 @@ CaptureBtnCont.addEventListener("click", (e) => {
 
   let imageURL = canvas.toDataURL();
 
-    if (db) {
-      let imageID = shortid(); // it will create a unique id
-      let dbTransaction = db.transaction("image", "readwrite");
-      let imageStore = dbTransaction.objectStore("image");
-      let imageEntry = {
-        id: `img - ${imageID}`,
-        url: imageURL,
-      };
-      imageStore.add(imageEntry); 
-    }
+  if (db) {
+    let imageID = shortid(); // it will create a unique id
+    let dbTransaction = db.transaction("image", "readwrite");
+    let imageStore = dbTransaction.objectStore("image");
+    let imageEntry = {
+      id: `img - ${imageID}`,
+      url: imageURL,
+    };
+    imageStore.add(imageEntry);
+  }
 
-  /*let a = document.createElement("a");
-  a.href = imageURL;
-  a.download = "image.jpg";
-  a.click();  */
+  setTimeout(() => {
+    CaptureBtn.classList.remove("scale-capture");
+  }, 500);
 });
 
 let timerID;

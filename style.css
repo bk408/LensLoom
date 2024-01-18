@@ -29,6 +29,7 @@ video {
   flex-direction: column;
   justify-content: space-between;
   z-index: 2;
+  cursor: pointer;
 }
 
 .actions-cont > * {
@@ -117,6 +118,7 @@ video {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-blend-mode: color-burn;
+  cursor: pointer;
 }
 
 .orange {
@@ -142,4 +144,21 @@ video {
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+
+.material-icons{
+  color: white;
+  font-size: 3rem;
+}
+
+.gallery{
+  right: 6rem;
+  bottom: 7rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.gallery:hover{
+  cursor: pointer;
 }
