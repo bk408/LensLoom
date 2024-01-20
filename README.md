@@ -1,6 +1,5 @@
 📸 LensLoom 🖼️
-
-LensLoom is a delightful camera and gallery application that captures moments with flair. Developed with passion by Bhavya Khatri, this project seamlessly combines image capturing, video recording, and a browser-stored gallery. Unleash your creativity with customizable filters, giving your visuals a unique touch. LensLoom is more than just a camera app; it's an immersive experience designed for those who love to capture life's beautiful moments. Explore the world through your lens and let LensLoom be your creative companion.
+LensLoom is a captivating camera and gallery application crafted with passion by Bhavya Khatri. This project seamlessly integrates image capturing, video recording, and a browser-stored gallery to provide a comprehensive visual experience. With LensLoom, you can elevate your photography game, adding a touch of uniqueness to each captured moment.
 
 Features:
 
@@ -9,15 +8,15 @@ Features:
 🖼️ Gallery Stored in the Browser: Your memories, conveniently stored and accessible right from your browser.
 LensLoom is not just a tool; it's an ode to creativity, making every capture an artistic endeavor. Made with love by Bhavya Khatri.
 
-# Process
+🔄 Process
 
-- Basic structure created
-- Video Part created
-- Record & Capture button created
-- Record Stream Video
-- Added timer functionality
-- Image capture functionality added
-- Image filter functionality added
-- Gallery Feature added   - using Index DB
-- Retrieve data from indexedDB to gallery
+🏗️ Basic structure created
+🎥 Video Part created
+📷 Record & Capture button created
+📹 Record Stream Video
+⏱️ Added timer functionality
+🌅 Image capture functionality added
+🎨 Image filter functionality added
+🖼️ Gallery Feature added - using Index DB
+🔄 Retrieve data from IndexedDB to gallery
 
