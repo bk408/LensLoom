@@ -8,7 +8,7 @@ Features:
 🌈 Image Capturing with Filters: Express yourself with a variety of filters to enhance your photos.
 🎥 Video Recording: Capture dynamic moments with the video recording feature.
 🖼️ Gallery Stored in the Browser: Your memories, are conveniently stored and accessible right from your browser.
-LensLoom is not just a tool; it's an ode to creativity, making every capture an artistic endeavor. Made with love by Bhavya Khatri.
+LensLoom is not just a tool; it's an ode to creativity, making every capture an artistic endeavour. Made with love by Bhavya Khatri.
 
 🔄 Process
 
@@ -22,7 +22,8 @@ LensLoom is not just a tool; it's an ode to creativity, making every capture an 
 🖼️ Gallery Feature added - using Index DB
 🔄 Retrieve data from IndexedDB to the gallery
 
-Built with cutting-edge technologies:
+🚀 Built with cutting-edge technologies:
+
 🔍 Media Stream
 🎙️ Media Recorder
 📷 Media Devices
