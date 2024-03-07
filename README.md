@@ -1,5 +1,6 @@
 ![loom](https://github.com/bk408/LensLoom/assets/116827830/2cf9d0de-2a16-4a65-8f98-382fdafdde62)
 
+
 📸 LensLoom 🖼️
 LensLoom is a captivating camera and gallery application crafted with passion by Bhavya Khatri. This project seamlessly integrates image capturing, video recording, and a browser-stored gallery to provide a comprehensive visual experience. With LensLoom, you can elevate your photography game, adding a touch of uniqueness to each captured moment.
 
